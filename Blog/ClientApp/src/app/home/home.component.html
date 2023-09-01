@@ -1,0 +1,19 @@
+<section class="blog-me pt-100 pb-100" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 mx-auto text-center">
+                <div class="section-title mb-100">
+                    <h4>latest blog</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6" *ngFor="let singleblogpost of singleblogposts">
+                <!-- Single Blog -->
+                <single-blog [singleblog]="singleblogpost"></single-blog>
+            </div>
+
+        </div>
+    </div>
+</section>
